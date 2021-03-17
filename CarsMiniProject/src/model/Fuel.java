@@ -81,7 +81,7 @@ public class Fuel{
 	
 	@Override
 	public String toString() {
-		return "Cars [id=" + id + ",serial number=" + serialNumber + ", octane=" + octane + ", lb=" + lb + "]";
+		return "Fuel [id=" + id + ",serial number=" + serialNumber + ", octane=" + octane + ", lb=" + lb + "]";
 	}
 	
 	

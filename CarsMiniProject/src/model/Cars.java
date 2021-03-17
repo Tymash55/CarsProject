@@ -18,6 +18,9 @@ public class Cars{
 	@Column(name="ID")
 	private int id;
 	
+	@Column(name="Serial Number")
+	private int serialNum;
+	
 	@Column(name="NAME")
 	private String name;
 	
@@ -31,10 +34,11 @@ public class Cars{
 	public Cars() {
 		super();
 	}
-	
-	public Cars(String name, String color) {
+
+	public Cars(String name, String color, int serialNum) {
 		this.name = name;
 		this.color = color;
+		this.serialNum = serialNum;
 	}
 
 	public int getId() {
@@ -43,6 +47,14 @@ public class Cars{
 
 	public void setId(int id) {
 		this.id = id;
+	}
+	
+	public int getSerialNum() {
+		return serialNum;
+	}
+
+	public void setSerialNum(int serialNum) {
+		this.serialNum = serialNum;
 	}
 
 	public String getName() {
@@ -63,7 +75,7 @@ public class Cars{
 
 	@Override
 	public String toString() {
-		return "Cars [id=" + id + ", name=" + name + ", color=" + color + "]";
+		return "Cars [id=" + id + ". serial number=" + serialNum +  ", name=" + name + ", color=" + color + "]";
 	}
 	
 	

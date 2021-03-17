@@ -2,9 +2,6 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<<<<<<< Updated upstream
-<title>Cars</title>
-=======
 <title>Insert title here</title>
 <style>
 
@@ -21,20 +18,38 @@ th, td {
   background-color: black;
   color: beige;
   }
- table, th, td {
-  border: 2px solid black;
-}
+  a{
+  text-decoration:none;
+  }
 </style>
->>>>>>> Stashed changes
 </head>
 <body>
-	<h1>Cars List Menu</h1>
-	<form action= "addCarsServlet" method="post">
-	Car Name: <input type="text" name="name">
-	Car Color: <input type ="text" name="color">
-	<input type="submit" value="Add car">
-	</form> <br />
-	<a href = "viewAllCarsServlet">View Cars List</a>
-	
+<br />
+<br />
+<br />
+<form action = "addCarsServlet" method="post">
+<table align="center">
+<tr>
+	<th colspan="2">Add a new car.</th>
+</tr>
+<tr>
+<td align="right"> Brand: </td> 
+<td><input type ="text" name = "name"></td>
+</tr>
+<tr>
+<td align="right">Color: </td> 
+<td><input type = "text" name = "color"></td>
+</tr>
+<tr> 
+<td></td>
+<td><input type = "submit" value="Add car"></td>
+</tr>
+</table>
+</form> 
+<br />
+<br />
+<center>
+<a href = "viewAllCarsServlet">View Cars List</a>
+</center>
 </body>
 </html>
